@@ -7,6 +7,7 @@ import codeDesignPatterns.inheritence.SubmitButton;
 import codeDesignPatterns.inheritence.TextBox;
 import codeDesignPatterns.looselyCoupled.TaxCalculator;
 import codeDesignPatterns.looselyCoupled.TaxCalculator2024;
+import codeDesignPatterns.memento.Editor;
 import codeDesignPatterns.polymorphism.Circle;
 import codeDesignPatterns.polymorphism.Rectangle;
 import codeDesignPatterns.polymorphism.Shape;
@@ -42,6 +43,9 @@ public class Main {
         //polymorphism
         calculateArea(new Circle(3));
         calculateArea(new Rectangle(5,4));
+
+        //momento
+        var editor = new Editor();
     }
     //loosely coupled
     public static TaxCalculator getCalculator(){
